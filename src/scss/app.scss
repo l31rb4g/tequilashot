@@ -1,0 +1,123 @@
+body {
+  margin: 20px;
+  padding: 0;
+  font-family: Arial;
+}
+
+h1 {
+  border-bottom: 1px solid #ccc;
+}
+
+#loader {
+
+}
+
+#back {
+  position: absolute;
+  display: block;
+  margin: -50px 0 0 10px;
+  font-size: 36px;
+  text-decoration: none;
+  color: #333;
+}
+
+ul.shotList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+  &.shotSelected {
+    li:not(.selected) {
+      display: none;
+    }
+  }
+
+  li {
+    position: relative;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+
+    & > img {
+      display: block;
+    }
+
+    .bar {
+      position: absolute;
+      display: block;
+      top: 194px;
+      width: calc(100% - 12px);
+      background: #000;
+      opacity: 0.6;
+      color: #fff;
+      padding: 6px;
+      border-top: 1px solid #ccc;
+      letter-spacing: -0.8px;
+
+      .views {
+        float: right;
+        font-size: 12px;
+        margin: 3px 3px 0 0;
+        background: url('../img/eye.png') left top no-repeat;
+        padding-left: 20px;
+      }
+    }
+
+    .details {
+      overflow: hidden;
+      padding: 10px 10px 10px;
+
+      .author {
+        margin-bottom: 10px;
+
+        img {
+          width: 32px;
+          border-radius: 100%;
+        }
+
+        span {
+          display: block;
+          margin: -28px 0 0 45px;
+        }
+      }
+
+      .description {
+        font-size: 12px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 26px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  ul.shotList {
+    width: calc(100% - 20px);
+    padding: 10px;
+
+    li {
+      width: 100%;
+      height: auto;
+      margin: 20px 0 0;
+
+      &:first-child, &.selected {
+        margin-top: 0;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
