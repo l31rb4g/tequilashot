@@ -2,10 +2,12 @@ body {
   margin: 20px;
   padding: 0;
   font-family: Arial;
+  background:#eee;
 }
 
 h1 {
   border-bottom: 1px solid #ccc;
+  text-align: center;
 }
 
 #loader {
@@ -15,7 +17,7 @@ h1 {
 #back {
   position: absolute;
   display: block;
-  margin: -50px 0 0 10px;
+  top: 10px;
   font-size: 36px;
   text-decoration: none;
   color: #333;
@@ -24,8 +26,10 @@ h1 {
 ul.shotList {
   list-style: none;
   margin: 0;
-  padding: 0;
   overflow: hidden;
+  width: calc(100% - 20px);
+  padding: 10px;
+  text-align: center;
 
   &.shotSelected {
     li:not(.selected) {
@@ -35,24 +39,42 @@ ul.shotList {
 
   li {
     position: relative;
-    width: 200px;
-    margin: 0;
+    display: inline-block;
+    max-width: 400px;
+    height: 150px;
     padding: 0;
     cursor: pointer;
+    background: #fff;
+    margin: 10px;
+    text-align: left;
 
-    & > img {
-      display: block;
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &.selected {
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+
+    div.img {
+      position: relative;
+
+      & > img {
+        width: 100%;
+      }
     }
 
     .bar {
       position: absolute;
       display: block;
-      top: 194px;
-      width: calc(100% - 12px);
+      bottom: 4px;
+      width: calc(100% - 16px);
       background: #000;
       opacity: 0.6;
       color: #fff;
-      padding: 6px;
+      padding: 8px;
       border-top: 1px solid #ccc;
       letter-spacing: -0.8px;
 
@@ -91,33 +113,29 @@ ul.shotList {
   }
 }
 
-@media (max-width: 480px) {
-  body {
-    margin: 0;
-  }
-
+@media (max-width: 460px) {
   h1 {
     font-size: 26px;
     margin: 10px;
-    text-align: center;
   }
 
   ul.shotList {
-    width: calc(100% - 20px);
-    padding: 10px;
 
     li {
       width: 100%;
-      height: auto;
-      margin: 20px 0 0;
-
-      &:first-child, &.selected {
-        margin-top: 0;
-      }
+      margin-left: 0;
+      margin-right: 0;
 
       img {
-        width: 100%;
+
       }
     }
+  }
+}
+
+@media (min-width: 461px) {
+  #back {
+    top: 13px;
+    font-size: 40px;
   }
 }

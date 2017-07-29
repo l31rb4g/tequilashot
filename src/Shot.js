@@ -24,10 +24,12 @@ class Shot extends React.Component {
         }
         return (
             <li onClick={this.handleClick} className={this.state.is_active ? 'selected' : ''}>
-                <img src={this.props.data.images.teaser} alt={this.props.data.title} />
-                <div className="bar">
-                    {this.props.data.title}
-                    <div className="views">{this.props.data.views_count}</div>
+                <div className="img">
+                    <img src={this.props.data.images.normal} alt={this.props.data.title} />
+                    <div className="bar">
+                        {this.props.data.title}
+                        <div className="views">{this.props.data.views_count}</div>
+                    </div>
                 </div>
                 {details}
             </li>
