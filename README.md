@@ -7,6 +7,11 @@ Visualize os shots mais recentes!
 ----------
 
 
+Requerimentos
+-----------
+Esse projeto requer o Nodejs v7.0 ou mais recente.
+
+
 Instalação
 -----------
 1. Clone esse repositório
@@ -15,12 +20,12 @@ Instalação
 
 Rodando o servidor
 -----------
-Esse app foi testado com Node v7+
-
 1. Rode o servidor: $ npm start
 2. Acesse no browser: http://localhost:3000
 
 
 Testando
 -----------
+Esse app foi testado com Node v7+
+
 1. Rode os testes: $ npm test

@@ -34,7 +34,7 @@ class App extends React.Component {
             this.setState({
                 shots: json.data
             });
-        })
+        });
     }
 
     select(shot) {
