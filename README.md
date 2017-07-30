@@ -6,12 +6,16 @@ Tequila Shot
 Visualize os shots mais recentes!
 ----------
 
+
 Instalação
 -----------
 Esse app foi desenvolvido e testado com Node v8.2.1
 
 1. Clone esse repositório
 2. Instale as dependências: $ npm install
-3. Rode o servidor: $ npm start
-4. Acesse no browser http://localhost:3000
 
+
+Rodando o servidor
+-----------
+1. Rode o servidor: $ npm start
+2. Acesse no browser http://localhost:3000
