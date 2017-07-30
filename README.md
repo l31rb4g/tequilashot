@@ -19,3 +19,8 @@ Rodando o servidor
 -----------
 1. Rode o servidor: $ npm start
 2. Acesse no browser: http://localhost:3000
+
+
+Testando
+-----------
+1. 
