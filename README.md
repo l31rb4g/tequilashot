@@ -23,4 +23,4 @@ Rodando o servidor
 
 Testando
 -----------
-1.
+1. Rode os testes: $ npm test
