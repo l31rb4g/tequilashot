@@ -4,6 +4,7 @@ Tequila Shot
 
 ----------
 Visualize os shots mais recentes!
+----------
 
 Instalação
 -----------
