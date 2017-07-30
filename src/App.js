@@ -21,7 +21,7 @@ class App extends React.Component {
                 { this.state.shotSelected ? <a id="back" onClick={this.goBack.bind(this)}>&lt;</a> : null }
                 <ul className={"shotList " + this.state.shotSelected}>
                     {this.state.shots.map(data => (
-                        <Shot key={data.id} data={data} img={data.images.normal} select={this.select.bind(this)}/>
+                        <Shot key={data.id} data={data} img={data.images.normal} select={this.select.bind(this)} />
                     ))}
                 </ul>
             </div>
