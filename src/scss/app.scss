@@ -11,7 +11,9 @@ h1 {
 }
 
 #loader {
-
+  font-size: 25px;
+  text-align: center;
+  margin-top: 180px;
 }
 
 #back {
@@ -21,6 +23,7 @@ h1 {
   font-size: 36px;
   text-decoration: none;
   color: #333;
+  cursor: pointer;
 }
 
 ul.shotList {
@@ -137,5 +140,13 @@ ul.shotList {
   #back {
     top: 13px;
     font-size: 40px;
+  }
+}
+
+@media (min-width: 640px) {
+  ul.shotList {
+    li {
+      margin: 30px 20px;
+    }
   }
 }
