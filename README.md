@@ -26,6 +26,6 @@ Rodando o servidor
 
 Testando
 -----------
-Esse app foi testado com Node v7+
+Esse app foi testado com Node v7+ no Debian 8 (jessie)
 
 1. Rode os testes: $ npm test
