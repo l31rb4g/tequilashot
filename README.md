@@ -9,7 +9,7 @@ Visualize os shots mais recentes!
 
 Requerimentos
 -----------
-Esse projeto requer o Nodejs v7.0 ou mais recente.
+Esse projeto requer o Nodejs v7 ou mais recente.
 
 
 Instalação
